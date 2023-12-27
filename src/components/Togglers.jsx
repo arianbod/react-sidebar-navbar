@@ -3,12 +3,12 @@ const TogglersContext = createContext();
 export const UseTogglers = () => useContext(TogglersContext);
 const AppContext = ({ children }) => {
 	const [modalState, setModalState] = useState(false);
-	const [menuState, setMenuState] = useState(false);
+	const [sidebarState, setSidebarState] = useState(false);
 	const contextValue = {
 		modalState,
 		setModalState,
-		menuState,
-		setMenuState,
+		sidebarState,
+		setSidebarState,
 	};
 	return (
 		<TogglersContext.Provider value={contextValue}>

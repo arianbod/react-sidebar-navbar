@@ -1,11 +1,11 @@
 import React from 'react';
-import { Modal, Home, Menu } from './components';
+import { Modal, Home, Sidebar } from './components';
 const App = () => {
 	return (
 		<>
 			<Home>
 				<Modal />
-				<Menu />
+				<Sidebar />
 			</Home>
 		</>
 	);

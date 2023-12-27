@@ -7,7 +7,7 @@ const Modal = () => {
 		<>
 			{modalState ? (
 				<section>
-					Modal showing
+					Modal
 					<button onClick={() => setModalState(!modalState)}>x</button>
 				</section>
 			) : (

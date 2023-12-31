@@ -313,6 +313,11 @@ Project CSS
 	top: 0;
 	height: 100vh;
 	background-color: var(--white);
+	transform: translateX(-100%);
+}
+.sidebar-show {
+	transform: translateX(0);
+	transition: var(--transition);
 }
 .sidebar .links a svg {
 	font-size: 1.5rem;

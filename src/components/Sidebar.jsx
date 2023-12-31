@@ -2,7 +2,7 @@ import React from 'react';
 import { UseTogglers } from './context';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import MenuItem from './MenuItem';
-import { links } from '../data';
+import { links, social } from '../data';
 import Logo from '../logo.svg';
 const Sidebar = () => {
 	const { sidebarState, setSidebarState } = UseTogglers();
@@ -27,6 +27,16 @@ const Sidebar = () => {
 									{icon}
 									<span className='Text'>{text}</span>
 								</a>
+							</li>
+						);
+					})}
+				</ul>
+				<ul className='social-links'>
+					{social.map((item) => {
+						const { id, url, icon } = item;
+						return (
+							<li key={id}>
+								<a href={url}>{icon}</a>
 							</li>
 						);
 					})}

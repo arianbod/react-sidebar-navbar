@@ -330,7 +330,7 @@ Project CSS
 	background-color: var(--grey-100);
 	transition: var(--transition);
 }
-.sidebar a {
+.sidebar .links a {
 	display: flex;
 	align-items: center;
 	padding: 1rem 1.5rem;
@@ -343,6 +343,22 @@ Project CSS
 }
 .sidebar-header {
 	display: flex;
+}
+.social-links {
+	display: flex;
+	position: absolute;
+	bottom: 10px;
+}
+.social-links a {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	height: 60px;
+	color: var(--primary-700);
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 1.25rem;
+	letter-spacing: var(--letterSpacing);
 }
 /* Modal */
 .modal-overlay {
